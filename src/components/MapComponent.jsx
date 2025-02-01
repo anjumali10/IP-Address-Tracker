@@ -7,7 +7,7 @@ const MapComponent = ({ ipData }) => {
   const position = ipData?.location ? [ipData.location.lat, ipData.location.lng] : defaultPosition;
 
   return (
-    <MapContainer center={position} zoom={0} className="h-[400px] w-full absolute top-[250px] z-0">
+    <MapContainer center={position} zoom={1} className="h-[400px] w-full absolute top-[238px] z-0">
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; OpenStreetMap contributors'
